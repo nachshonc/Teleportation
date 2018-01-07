@@ -1,0 +1,11 @@
+Makefile	needed to construct binaries
+		debugging (skip*D) versions do lots of sanity checks
+driver.py	runs binaries, writes stats to ./graphs folder
+stress.py	runs shorter debugging version of stats
+
+SkipListL	lazy skiplist, no memory management, used for debugging
+SkipListLZ	lazy skiplist, hazard pointers
+SkipListLTZ	lazy skiplist, teleportation hazard pointers
+
+Driver.cpp	main, pre-allocates local pools
+DebugDriver.cpp	main for debugging version
